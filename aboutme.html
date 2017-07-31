@@ -46,22 +46,67 @@ color: red;
   </style>
   
 <body>
+
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body>
+
+<p>
+<button onclick="myMove()">Click Me</button>
+</p> 
+
+<div id ="container">
+<div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
 <h1> Reflection 1 </h1>
 <p>One of the similarities between python and scratch are the way shapes are drawn.
   In both the formula 360-# of sides is important because it determines the degree of rotation. 
   One of the main difference is the interface because in Scratch there are a lot of graphics whereas with python it is simply syntax. </p>
  
-<he> Reflection 2 </h2>
+<h2> Reflection 2 </h2>
   <p2>I overall enjoyed making today's game, especially because of how user-interactive it is so that they are always interested. 
   The only different part was keeping track of all of the if statements and different options. Learning about functions was also
   interesting because it's easy to see how useful they would be with a project with a lot of lines of code.</p2>
   
-<hea> Reflection 2 </h3>  
+<h3> Reflection 2 </h3>  
  <p3> A list combines data and stores it together. A list can be used with a random number generator to pick out one piece of data or 
   conditionals could be used to pick out data that meets certain requirements. Lists are useful especially when thinking of real world 
   applications like filters. </p3>
   
-  <head> Reflection 3 </h4>
+  <h4> Reflection 3 </h4>
   <p4>
     I thought going to Refinery 29 was great. I liked how they promoted a positive self-image especially for women. I also liked how we were able to 
     think creativly when they aksed for our input on their website and allowed us to add our own ideas. It was cool being able to think through
@@ -73,25 +118,25 @@ color: red;
     an outline made it a lot easier. I worked well with my partner, and running the finished program at the end was really cool since
     there were a lot of different elements to it. I worked well with my partner, Ruhika and we got the game done pretty fast.
   </p5>
-  <headi> Reflection 4 </h5>
+  <h5> Reflection 4 </h5>
   <p5>
     Working on the circut today was definitely different than other programs I have created. I've never programmed a circut, and I think it was 
     a little more difficult because you had to not only logically think about the code, but also relate it to the physical circut. However, once
     we got the first one to work, it became easier figuring out what to do because the general idea is the same. My group worked well together,
     we split up our group of four in half, two of us figured out the code and the other two worked on setting up the circut. 
     </p6>
-  <h5> Reflection 5 </h5>
+  <h6> Reflection 5 </h6>
   <p6>
     A glow for today was using the ideas in the code from yesterday to create more complex circuits today. A grow would be better 
     understanding the wiring because I seem to understand the coding more than the hardware. 
   </p6>
-  <headin> Reflection 6 </h6>
+  <h7> Reflection 6 </h7>
   <p7>
     A glow for today was the way our group was able to figure out the new information and troubleshoot. A grow would be working as a 
     whole more because some were only doing the hardware and some only the software. Overall though, we worked well together and
     getting the robot to eventually dance was really cool.
   </p7>
-  <heading> Reflection 7 </h7>
+  <h8> Reflection 7 </h8>
   <p8>
     I enjoyed expanding on our robot. My group split up the work between the hardware and software and we worked well together.
   </p8>

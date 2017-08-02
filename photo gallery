@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <style>
+    
+    </style>
+    <body onload = "loadImage()">
+    
+        <h1> Photo Gallery </h1>
+        
+        <img id = "pics" src = "URL">
+        <br>
+        
+        <button id = "left" onclick = "left()">Left</button>
+        <button id = "right" onclick = "left()">Right</button>
+        
+    </body>
+</html>
+body{
+    text-align: center;
+    background-color: plum;
+    color: slateblue;
+}
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+img{
+    height: 300px;
+    width: 350px;
+}    
+button{
+color:slateblue;
+background-color:plum;
+padding: 15px 32px;
+font-size: 19px;
+border: slateblue 2px dotted;
+text-align: center;
+}
+ 
+ var imgindex = 0;
+
+var images = ["http://www.telegraph.co.uk/content/dam/Travel/2016/October/northern-lights-xlarge.jpg", "https://sobercouragedotcom1.files.wordpress.com/2015/04/sobercourage_198.png?w=226&h=337", "https://previews.123rf.com/images/fesus/fesus1502/fesus150200135/36936127-Lavender-field-in-Summer-near-Tihany-Hungary-Stock-Photo-purple.jpg", "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/sunflowersmo.jpg", "http://i.imgur.com/u7herBa.jpg"];
+function loadImage(){
+document.getElementById("pics").src = images[imgindex];
+}
+function left(){
+    imgindex--;
+    if(imgindex < 0){
+        imgindex = 4;
+    }
+loadImage();
+    document.getElementById("demo").innerHTML = imgindex;
+}
+function right(){
+    imgindex++;
+    if(imgindex < 0){
+        imgindex = 3;
+    }
+
+
+}

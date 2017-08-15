@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head> <title> </title>
+<style>
+
+#place{
+    
+ position: relative;
+ top: 200px;
+ left: 50%;
+ font-size: 30px;
+font-family: 'Lobster', cursive;
+#place{
+    
+ position: relative;
+ top: 200px;
+ left: 40%;
+ font-size: 30px;
+font-family: 'Poppins', sans-serif;  
+}
+.pic1 img {
+  height: 70px;
+  width: 150px;
+}
+.pic2 img{
+    height: 200px;
+  width: 200px;
+  position: relative;
+  left: 400px;
+}
+body {
+    background: url(http://www.occupygermany.org/wp-content/uploads/2015/05/washington-web-design-services.jpg) no-repeat center fixed; 
+}
+
+
+}
+.pic1 img {
+  height: 70px;
+  width: 150px;
+}
+.pic2 img{
+    height: 200px;
+  width: 200px;
+  position: relative;
+  left: 70%;
+}
+body {
+    background: url(http://www.occupygermany.org/wp-content/uploads/2015/05/washington-web-design-services.jpg) no-repeat center fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}   
+
+
+
+div.transbox {
+    margin: 50px;
+    background-color: white;
+    border: 1px dotted black;
+    opacity: 0.7;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    position: relative;
+    height: 300px;
+    width: 500px;
+    left: 32%;
+    
+}
+
+div.transbox p {
+    margin: 10%;
+    font-weight: bold;
+    color: black;
+}
+</style>
+</head>
+<body>
+
+<div id = "place">About Us</div>
+<div class="pic2">
+  <img src="https://static.wixstatic.com/media/5be07c_44246dab7f7641d79d7e5d83e284fc54~mv2.png/v1/fill/w_200,h_200,al_c/5be07c_44246dab7f7641d79d7e5d83e284fc54~mv2.png" />
+</div>
+<div class="background">
+  <div class="transbox">
+  <div class="pic1">
+  <img src="http://cdn2.sportngin.com/attachments/news_article/6827/8505/girlswhocodegwc-logo.png" />
+</div>
+
+    <p>We are</p>
+  </div>
+</div>
+</body>
+</html>
